@@ -15,12 +15,12 @@ hr {
 }
 table{
     margin-top: 20%;
-    margin-left: 5%;
+    margin-left: 4%;
     text-align: center;
     box-shadow: 0 0 10px #fff;
 }
 table, th, tr, td {
-    border: solid 1px;
+    border: solid 1px #bbb;
     font-size: 18px;
 }
 @media (min-width:700px) {
@@ -28,4 +28,11 @@ table, th, tr, td {
         margin-top: 5%;
         margin-left: 35%;
     }
+}
+.ps {
+    color: aqua;
+    border: solid 1px #bbb;
+}
+.bka {
+    color: red;
 }
