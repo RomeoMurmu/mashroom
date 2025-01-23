@@ -29,7 +29,7 @@ table, th, tr, td {
 }
 @media (min-width:700px) {
     table{
-        margin-top: 5%;
+        margin-top: 10%;
         margin-left: 35%;
     }
 }
