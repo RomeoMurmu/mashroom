@@ -39,6 +39,7 @@ table, tr, th, td {
 @media (min-width:700px) {
     table {
         margin-left: 37%;
+        font-size: 18px;
     }
 }
 .ps {
