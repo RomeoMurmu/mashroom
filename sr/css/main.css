@@ -14,21 +14,25 @@
     box-shadow: 0 0 20px #00aeff;
     border-bottom: solid 1px #bbb;
 }
+h1 {
+    text-align: center;
+    color: #222;
+    animation: rotatingRGB 2s infinite;
+    -webkit-text-stroke: 1px white;
+    font-family: "Lucida Handwriting", cursive;
+}
+.bmns {
+    animation: rotatingRGB 3s infinite;
+}
 table {
     text-align: center;
-    font-size: 12px;
+    font-size: 17px;
 }
 table, tr, th, td {
     border: solid 1px #bbb;
 }
 .content {
     margin-top: 10%;
-}
-.mainb p {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @media (max-width:700px) {
@@ -39,9 +43,23 @@ table, tr, th, td {
 @media (min-width:700px) {
     table {
         margin-left: 37%;
-        font-size: 18px;
     }
 }
-.ps {
-    color: aqua;
+
+@keyframes rotatingRGB {
+    0% {
+        text-shadow: 0 0 10px rgb(255, 0, 0);
+    }
+    25% {
+        text-shadow: 0 0 10px rgb(0, 255, 0);
+    }
+    50% {
+        text-shadow: 0 0 10px rgb(0, 0, 255);
+    }
+    75% {
+        text-shadow: 0 0 10px rgb(255, 0, 255);
+    }
+    100% {
+        text-shadow: 0 0 10px rgb(255, 0, 0);
+    }
 }
