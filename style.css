@@ -4,8 +4,10 @@ body {
 }
 h1 {
     text-align: center;
-    text-shadow: 0 0 5px #000, 0 0 10px #00aeff, 0 0 10px #00aeff;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    animation: rotatingRGB 2s infinite;
+    -webkit-text-stroke: 1px white;
+    font-family: "Lucida Handwriting", cursive;
 }
 .tls {
     background: #222;
@@ -30,7 +32,10 @@ table, th, tr, td {
 @media (min-width:700px) {
     table{
         margin-top: 10%;
-        margin-left: 35%;
+        margin-left: 30%;
+    }
+    table, th, tr, td {
+        font-size: 25px;
     }
 }
 .ps {
@@ -38,5 +43,29 @@ table, th, tr, td {
     border: solid 1px #bbb;
 }
 .bka {
+    color: #fff;
+    text-decoration: line-through 1px #fff;
+}
+
+.bkan {
     color: red;
+}
+
+
+@keyframes rotatingRGB {
+    0% {
+        text-shadow: 0 0 10px rgb(255, 0, 0);
+    }
+    25% {
+        text-shadow: 0 0 10px rgb(0, 255, 0);
+    }
+    50% {
+        text-shadow: 0 0 10px rgb(0, 0, 255);
+    }
+    75% {
+        text-shadow: 0 0 10px rgb(255, 0, 255);
+    }
+    100% {
+        text-shadow: 0 0 10px rgb(255, 0, 0);
+    }
 }
