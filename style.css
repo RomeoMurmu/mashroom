@@ -49,6 +49,7 @@ table, th, tr, td {
 
 .bkan {
     color: red;
+    animation: blinkAnimation 1s infinite;
 }
 
 
@@ -69,3 +70,15 @@ table, th, tr, td {
         text-shadow: 0 0 10px rgb(255, 0, 0);
     }
 }
+@keyframes blinkAnimation {
+  0% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
+
